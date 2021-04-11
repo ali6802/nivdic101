@@ -1,3 +1,6 @@
+.definitions-bar {
+   width: 100%;
+}
 .definitions-bar a {
    color:var(--PurpleBackground);
    font-size: 1.8rem;
@@ -10,7 +13,7 @@
    font-size: 3.5rem !important;
 }
 .definition-logo {
-   font-size: 3rem !important;
+   font-size: 3rem !important;   
 }
 .nav-search {
    height: 4rem;
@@ -32,7 +35,7 @@
    font-size: 1.8rem !important;
 }
 .nav-search div {
-   margin-left: 0.6rem;
+   margin-left: 0.5rem;
    color: var(--WhiteColor);
 }
 .nav-search div:hover {
@@ -136,20 +139,33 @@
 .synonym-box a:hover{
    background-color: var(--WOTDBackground);
 }
-@media(min-width:92.21rem){
+@media(min-device-width:992px){
    .nav-search {
       width:50rem!important;
    }
 }
-@media(max-width:92.2rem){
+@media only screen and (min-width:600px) and (max-width:992px){
    .nav-search {
       width: 40rem!important;
    }
 }
-@media(max-width:60rem){
+@media only screen and (min-width:400px) and (max-width:600px){
    .nav-search {
-      width: 30rem!important;
+      width: 32.5rem!important;
    }
 }
-
+@media(max-device-width:400px){
+   .color-box {
+      width: 100%!important;
+      display:flex!important;
+      justify-content: center!important;
+      align-items: ceter!important;
+   }
+   .color-box .container {
+      width: 90%!important;
+   }
+   .nav-search {
+      width: calc(100% - 3.5rem)!important;      
+   }
+}
 
